@@ -14,8 +14,9 @@ public class Class1 {
      * @param args the command line arguments
      */
     public static void main(String[] args) {
-        
-
+        iniciandoCap1();
+    }
+    public static void iniciandoCap1(){
         Frases();
             // datos de entrada para sumar
         int x=50;
@@ -24,6 +25,7 @@ public class Class1 {
         sumarDosNumeros(x,y);
         sumarDosNumeros(50,190);
         restarDosNumeros(x,y);
+        multiplicarDosNumeros(x,y);
        }     
         public static void Frases(){
         
@@ -45,7 +47,11 @@ public class Class1 {
         }
         public static void sumarDosNumeros(int n1, int n2){
             int resultado=n1+n2;
-            imprimirMensaje("la suma de "+n1 +" , "+n2+ "  es: " +resultado);
+            imprimirMensaje("la suma de "+n1 +", "+n2+ "  es: " +resultado);
         }
-        
+        public static void multiplicarDosNumeros (int n1, int n2){
+            int producto=n1*n2;
+            imprimirMensaje("El producto de "+n1 +","+n2+ " es: "+producto);
+        }
+
 }
