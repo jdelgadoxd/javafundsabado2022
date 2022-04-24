@@ -15,19 +15,63 @@ public class Class1 {
      */
     public static void main(String[] args) {
         iniciandoCap1();
+        revisandoVariable();
+        revisandoVariableBoolean();
+        revisionDeVariableChar();
+        revisionDeVariablesDecimales();
     }
+    
+    public static void revisionDeVariablesDecimales(){
+        System.out.println("revisionDeVariablesDecimales");
+        double precioProducto=5.7;
+    }
+    public static void revisionDeVariableChar(){
+        System.out.println("Tipo de dato Char");
+        char estadoCivil='C'; //casado
+             
+    }
+    public static void revisandoVariableBoolean(){
+        System.out.println("Tipo de Dato Boolean");
+        boolean deseaCasarse=false;
+        boolean tienePasaporte=true;
+        boolean esMayorDeEdad=false;
+        
+        
+    }
+  
+    public static void revisandoVariable(){
+        System.out.println("Revisando las variables de tipo entero ");
+                //edad, año,stock,cantiGoles, nroFilas, nroColumnas, cantDedos,numHijos
+                //nroViviendas, cantVacunas
+        int cantidad=20;
+        int edad=16;
+        int anho= 2022;
+        int candStock=60;
+        int cantiGoles=4;
+        int nroFilas=2500;
+        int nroColumnas=256;
+        int cantDedos=20;
+        int numHijos=5;
+        int nroViviendas=2;
+        int cantVacunas=3;
+        byte cantTickets=127; // desde -128 hasta 127
+        short nroFilasAsociados=32767;
+        long cantAsientosEstadio=85000;
+            
+    }
+    
     public static void iniciandoCap1(){
         Frases();
             // datos de entrada para sumar
         int x=50;
         int y=60;
-        
         sumarDosNumeros(x,y);
-        sumarDosNumeros(50,190);
+        //sumarDosNumerosExactos(50,190);
         restarDosNumeros(x,y);
         multiplicarDosNumeros(x,y);
-       }     
-        public static void Frases(){
+    }
+        
+    public static void Frases(){
         
         // TODO code application logic here
         
@@ -53,5 +97,4 @@ public class Class1 {
             int producto=n1*n2;
             imprimirMensaje("El producto de "+n1 +","+n2+ " es: "+producto);
         }
-
 }
